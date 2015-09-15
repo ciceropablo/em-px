@@ -35,7 +35,6 @@
     "tape": "^4.2.0"
   },
   "dependencies": {
-    "decimal-adjust": "0.0.0",
     "pinkie-promise": "^1.0.0"
   }
 }
