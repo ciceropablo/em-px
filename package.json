@@ -11,6 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/ciceropablo/em-px.git"
   },
+  "keywords": [
+    "em",
+    "px",
+    "pixel",
+    "pixels",
+    "unit",
+    "units"
+  ],
   "author": {
     "name": "Cícero Pablo",
     "email": "cicero.pablos@gmail.com",
