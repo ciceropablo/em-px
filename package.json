@@ -1,0 +1,33 @@
+{
+  "name": "em-px",
+  "version": "0.0.1",
+  "description": "A module to convert EM in PX.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "jshint ./*.js",
+    "test": "npm run lint && tape ./test.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciceropablo/em-px.git"
+  },
+  "author": {
+    "name": "Cícero Pablo",
+    "email": "cicero.pablos@gmail.com",
+    "url": "ciceropablo.github.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ciceropablo/em-px/issues"
+  },
+  "homepage": "https://github.com/ciceropablo/em-px#readme",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "jshint": "^2.8.0",
+    "tape": "^4.2.0"
+  },
+  "dependencies": {
+    "decimal-adjust": "0.0.0",
+    "pinkie-promise": "^1.0.0"
+  }
+}
