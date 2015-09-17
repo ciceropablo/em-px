@@ -21,6 +21,20 @@ emPx(0.667, 24, true)
   });
 ```
 
+Or
+
+```js
+var emPx = require('em-px');
+
+emPx('0.667em', '24px', true)
+  .then(function(px) {
+    console.log(px); // 16px
+  })
+  .catch(function(err) {
+    console.log(err.message);
+  });
+```
+
 ## API
 
 ### `emPx(em, [base], [format])`
@@ -32,13 +46,13 @@ Returns a promise that resolves to the value converted.
 #### `em`
 
 *Required*  
-Type: `number`
+Type: `number` or `string`
 
 Pixel value to converting.
 
 #### `base`
 
-Type: `number`  
+Type: `number` or `string`  
 Default: `16`
 
 Base value to converting.
