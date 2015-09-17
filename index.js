@@ -1,9 +1,12 @@
 'use strict';
 
 var Promise = require('pinkie-promise');
+var stripUnits = require('strip-units');
 
 module.exports = function(em, base, format) {
   return new Promise(function(resolve, reject) {
+    em = stripUnits(em);
+
     if (typeof em !== 'number') {
       reject(new TypeError('`em` should be a number'));
     }
@@ -14,6 +17,7 @@ module.exports = function(em, base, format) {
     }
 
     base = base || 16;
+    base = stripUnits(base);
     format = format || false;
 
     if (typeof base !== 'number' || base < 0) {
